@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Schedule</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sched.css">
+</head>
+<body>
+
+<div class="navbar">
+    <span class="header">Class Schedule</span>
+</div>
+
+<div class="main-container">
+
+    <div class="sched-header">
+        <div class="sched-subtitle">3rd Year &middot; 1st Semester</div>
+        <div class="sched-title">Weekly Timetable</div>
+    </div>
+
+    <div class="sched-wrapper">
+
+        <div class="sched-header-row">
+            <div class="day-head time-head">Time</div>
+            <div class="day-head">Mon</div>
+            <div class="day-head">Tue</div>
+            <div class="day-head">Wed</div>
+            <div class="day-head">Thu</div>
+            <div class="day-head">Fri</div>
+            <div class="day-head">Sat</div>
+            <div class="day-head">Sun</div>
+        </div>
+
+        <div class="sched-body">
+
+            <!-- column divider lines -->
+            <div class="col-line" style="grid-column:2;"></div>
+            <div class="col-line" style="grid-column:3;"></div>
+            <div class="col-line" style="grid-column:4;"></div>
+            <div class="col-line" style="grid-column:5;"></div>
+            <div class="col-line" style="grid-column:6;"></div>
+            <div class="col-line" style="grid-column:7;"></div>
+            <div class="col-line" style="grid-column:8;"></div>
+
+            <!-- time labels (one per hour, spanning 2 half-hour rows) -->
+            <div class="sched-time" style="grid-row:1/3;">7:00</div>
+            <div class="sched-time" style="grid-row:3/5;">8:00</div>
+            <div class="sched-time" style="grid-row:5/7;">9:00</div>
+            <div class="sched-time" style="grid-row:7/9;">10:00</div>
+            <div class="sched-time" style="grid-row:9/11;">11:00</div>
+            <div class="sched-time" style="grid-row:11/13;">12:00</div>
+            <div class="sched-time" style="grid-row:13/15;">1:00</div>
+            <div class="sched-time" style="grid-row:15/17;">2:00</div>
+            <div class="sched-time" style="grid-row:17/19;">3:00</div>
+            <div class="sched-time" style="grid-row:19/21;">4:00</div>
+            <div class="sched-time" style="grid-row:21/23;">5:00</div>
+
+            <!-- MONDAY -->
+            <div class="sched-class" style="grid-column:2; grid-row:3/6;">
+                <div class="class-code">CS 3114</div>
+                <div class="class-prof">J. Avila</div>
+                <div class="class-room">OL</div>
+            </div>
+            <div class="sched-class" style="grid-column:2; grid-row:7/10;">
+                <div class="class-code">CC 3105</div>
+                <div class="class-prof">D. Palma</div>
+                <div class="class-room">OL</div>
+            </div>
+            <div class="sched-class" style="grid-column:2; grid-row:13/17;">
+                <div class="class-code">CS 3113</div>
+                <div class="class-prof">J. Ropal</div>
+                <div class="class-room">OL</div>
+            </div>
+            <div class="sched-class" style="grid-column:2; grid-row:17/19;">
+                <div class="class-code">CS 3115</div>
+                <div class="class-prof">R. EDEC</div>
+                <div class="class-room">OL</div>
+            </div>
+
+            <!-- TUESDAY -->
+            <div class="sched-class" style="grid-column:3; grid-row:5/8;">
+                <div class="class-code">CS 3112</div>
+                <div class="class-prof">B. Belarmino</div>
+                <div class="class-room">OL</div>
+            </div>
+            <div class="sched-class" style="grid-column:3; grid-row:15/19;">
+                <div class="class-code">DS-3101</div>
+                <div class="class-prof">J. Ropal</div>
+                <div class="class-room">OL</div>
+            </div>
+
+            <!-- WEDNESDAY -->
+            <div class="sched-class" style="grid-column:4; grid-row:7/10;">
+                <div class="class-code">DS-3101</div>
+                <div class="class-prof">J. Ropal</div>
+                <div class="class-room">AV 407a</div>
+            </div>
+            <div class="sched-class" style="grid-column:4; grid-row:19/23;">
+                <div class="class-code">CS 3112</div>
+                <div class="class-prof">B. Belarmino</div>
+                <div class="class-room">CL 2a</div>
+            </div>
+
+            <!-- THURSDAY -->
+            <div class="sched-class" style="grid-column:5; grid-row:7/10;">
+                <div class="class-code">CS 3113</div>
+                <div class="class-prof">J. Ropal</div>
+                <div class="class-room">CL 2a</div>
+            </div>
+            <div class="sched-class" style="grid-column:5; grid-row:19/23;">
+                <div class="class-code">CC 3105</div>
+                <div class="class-prof">D. Palma</div>
+                <div class="class-room">CL 1a</div>
+            </div>
+
+            <!-- FRIDAY -->
+            <div class="sched-class" style="grid-column:6; grid-row:13/16;">
+                <div class="class-code">CS 3115</div>
+                <div class="class-prof">R. EDEC</div>
+                <div class="class-room">AV 402a</div>
+            </div>
+            <div class="sched-class" style="grid-column:6; grid-row:19/22;">
+                <div class="class-code">CS 3114</div>
+                <div class="class-prof">J. Avila</div>
+                <div class="class-room">AV 406a</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
