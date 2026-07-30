@@ -253,6 +253,17 @@ li {
 }
 /* TABLE END */
 
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  color: white;
+  background-color: #000000;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     .text-content {
         font-size: 0.8rem;
