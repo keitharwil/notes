@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(75, 75, 246);
+}
+
+
+.indent {
+    margin-left: 1rem;
+}
+
+.Landing-Page {
+    font-family: "JetBrains Mono", monospace;
+    margin: 1rem;
+}

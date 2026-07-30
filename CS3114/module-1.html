@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="module-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="app.js" defer></script>
+    <title>CS3114/Module-1</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="lesson-border">
+            <h1 class="header">Overview of Software Engineering</h1>
+            <h2 class="header top-space">Software Plays Two Roles At Once</h2>
+            <h3 class="header top-space">Role 01</h3>
+            <p class="text-content bold">A Product</p>
+            <ul class="text-content">
+                <li>Computing potential itself</li>
+                <li>What the machine can actually do for someone</li>
+            </ul>
+            <h3 class="header top-space">Role 02</h3>
+            <p class="text-content bold">A Delivery Vehicle</p>
+            <ul class="text-content">
+                <li>Operating systems, networks and development tools that carry other products </li>
+            </ul>
+            <p class="text-content" style="margin-top: 16px;">
+                Software is an <b>Information changer</b> 
+                it manages, produces, modifies, displays, and transfers information,
+                from a single bit to full multimedia
+            </p>
+
+            <h2 class="header big-top-space"> Not Just Any Kind of Engineering </h2>
+            <p class="header bold top-space">01-Plan</p>
+            <ul class="text-content">
+                <li>Decide what is being build, and for whom</li>
+            </ul>
+            <p class="header bold top-space">02-Follow the plan</p>
+            <ul class="text-content">
+                <li>Discipline, not improvisation</li>
+            </ul>
+            <p class="header bold top-space">03-Adapt</p>
+            <ul class="text-content">
+                <li>Handle the difficulties nobody predicted</li>
+            </ul>
+
+            <p class="text-content top-space"> Step 3 is where most software project are won or lost. </p>
+        </div>
+
+
+        <div class="lesson-border" style="margin-top: 16px;">
+            <h1 class="header">Introduction to Software Engineering</h1>
+            <h2 class="header">Program, System, Software</h2>
+            <div class="flexbox-container">  
+                <div class="card"> 
+                    <span class="smol">Input</span>
+                    <p class="card-text">Data</p>
+                </div> 
+                <p>→</p>
+                <div class="card" style="width: 10rem;">
+                    <span class="smol">Process</span>
+                    <p class="card-text">The Program</p>
+                </div>
+                <p>→</p>
+                <div class="card" style="width: 10rem;">
+                    <span class="smol">Output</span>
+                    <p class="card-text">Information</p>
+                </div>
+            </div>
+            <p class="header bold top-space">A program</p>
+            <ul class="text-content">
+                <li>Instructions that tells the computer what to do</li>
+            </ul>
+            <p class="header bold top-space">Software</p>
+            <ul class="text-content">
+                <li>Sets onf instructions written using predefined formats and procedures</li>
+            </ul>
+            <br>
+            <h2 class="header big-top-space">GENERIC VS CUSTOMIZED</h2>
+            <h3 class="header big-top-space">GENERIC</h3>
+            <ul class="text-content">
+                <li>For a wider market, requirements are common, stable, well understood</li>
+                <li>Example: Operating System Software (OS)</li>
+            </ul>
+            <h3 class="header top-space">CUSTOMIZED</h3>
+            <ul class="text-content">
+                <li>For one customer, domain, environment, requiremente are unique</li>
+                <li>Example: Application Software for a specific client</li>
+            </ul>
+            <br>
+            <h2 class="header big-top-space">THREE TYPES OF SOFTWARE</h2>
+            <p class="header big-top-space bold">System</p>
+            <ul class="text-content">
+                <li>Progams, Languages and Documentations</li>
+                <li>Supplied by the manufacturer for computer's own use</li>
+                <li>OS, BIOS, Compilers</li>
+            </ul>
+            <p class="header top-space bold">Application</p>
+            <ul class="text-content">
+                <li>Built by professionals for a specific function</li>
+                <li>"user-based software"</li>
+                <li>payroll, banking, embedded</li>
+            </ul>
+            <p class="header top-space bold">Utility</p>
+            <ul>
+                <li>Built by professionals for a specific function</li>
+                <li>"user-based software"</li>
+                <li>payroll, banking, embedded</li>
+            </ul>
+            <br>
+            <h2 class="header big-top-space">WHAT IS A GOOD SOFTWARE?</h2>
+            <p class="header big-top-space bold">Cost-effectiveness</p>
+            <ul class="text-content">
+                <li>Did it return more than it cost?</li>
+            </ul>
+            <p class="header top-space bold">Usability & Reliability</p>
+            <ul class="text-content">
+                <li>Can we use it, and does it hold up?</li>
+            </ul>
+            <p class="header top-space bold">Maintainability & Efficiency</p>
+            <ul class="text-content">
+                <li>Can we live with this code next year?</li>
+            </ul>
+            <p class="header big-top-space bold">Bottom Line</p>
+            <ul class="text-content">
+                <li>Customer satisfaction, achieved within cost and budget constraints </li>
+            </ul>
+            <br>
+            <div class="text-content">
+                <div class="bw-table-container">
+                <div class="bw-table-header">
+                    <div class="bw-table-title">Software Through the Generations</div>
+                    <div class="bw-table-caption">Hardware and software advanced together</div>
+                </div>
+            
+                <table class="bw-table">
+                    <thead>
+                    <tr>
+                        <th class="col-gen">Generation</th>
+                        <th class="col-hw">Hardware</th>
+                        <th class="col-sw">Software</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col-gen"><span class="gen-num">1st</span><span class="gen-year">1944-1955</span></td>
+                        <td class="col-hw">Vacuum tubes</td>
+                        <td class="col-sw">Machine language</td>
+                    </tr>
+                    <tr>
+                        <td class="col-gen"><span class="gen-num">2nd</span><span class="gen-year">1956</span></td>
+                        <td class="col-hw">Transistors</td>
+                        <td class="col-sw">Symbolic language</td>
+                    </tr>
+                    <tr>
+                        <td class="col-gen"><span class="gen-num">3rd</span><span class="gen-year">1964-1970</span></td>
+                        <td class="col-hw">Integrated circuits</td>
+                        <td class="col-sw">High-level: FORTRAN, ALGOL</td>
+                    </tr>
+                    <tr>
+                        <td class="col-gen"><span class="gen-num">4th</span><span class="gen-year">1971-1990</span></td>
+                        <td class="col-hw">Large-scale ICs</td>
+                        <td class="col-sw">PL/I, BASIC, PASCAL</td>
+                    </tr>
+                    <tr>
+                        <td class="col-gen"><span class="gen-num">5th</span><span class="gen-year">1990+</span></td>
+                        <td class="col-hw">Very large-scale integration</td>
+                        <td class="col-sw">C, C++, Visual Basic, FoxPro, DBMS, Prolog, LISP</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="lesson-border" style="margin-top: 16px;">
+            <h1 class="header">WHAT IS SOFTWARE ENGINEERING</h1>
+            <div class="text-content">
+                <div class="grid-table-container">
+                    <div class="grid-table-header">
+                    <div class="grid-table-subtitle">The Goal</div>
+                    <div class="grid-table-title">Manufacturing Software That Is...</div>
+                    </div>
+
+                    <table class="grid-table">
+                    <tbody>
+                        <tr>
+                        <td>Timely produced</td>
+                        <td>User-friendly</td>
+                        <td>Reliable</td>
+                        </tr>
+                        <tr>
+                        <td>Cost-effective</td>
+                        <td>Portable</td>
+                        <td>Versatile</td>
+                        </tr>
+                        <tr>
+                        <td>Inter-operable</td>
+                        <td>Maintainable</td>
+                        <td class="highlight">Reusable</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>
