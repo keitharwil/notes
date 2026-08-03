@@ -102,6 +102,11 @@ li {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+
 #core-function{
     background-color: black;
     border-radius: 3px;
