@@ -11,15 +11,6 @@ body {
     align-items: center;
 }
 
-a {
-    color: black;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: rgb(99, 99, 247);
-}
-
 ul {
     padding-left: 20px;
 }
@@ -100,6 +91,15 @@ li {
     padding: 8px;
     border: black solid;
     border-radius: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 #core-function{
@@ -254,9 +254,12 @@ li {
 /* TABLE END */
 
 .button {
-  display: flex;
-  justify-content: center;
   font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  border: #000000 solid;
+  border-radius: 16px;
+  padding: 4px 8px;
 }
 
 .button:hover {
