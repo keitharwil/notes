@@ -16,11 +16,12 @@ ul {
 }
 
 li {
-    text-indent: -5px;
+    text-indent: -3px;
 }
 
 .main-container {
-    max-width: 800px;
+  width: 640px;
+  max-width: 640px;
 }
 
 .smol {
@@ -55,6 +56,10 @@ li {
 
 .big-top-space {
     margin-top: 8px;
+}
+
+.large-top-space {
+  margin-top: 16px;
 }
 
 .btm-space {
@@ -297,6 +302,9 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+  .main-container {
+      width: fit-content;
+    }
     .text-content {
         font-size: 0.8rem;
     }
@@ -307,6 +315,9 @@ li {
         font-size: 1rem;
     }
     h3.header{
+        font-size: 0.85rem;
+    }
+    h4.header{
         font-size: 0.8rem;
     }
     .text-content .grid-table, 
@@ -317,7 +328,6 @@ li {
         width: 100%;
         box-sizing: border-box;
     }
-  
     .text-content .grid-table tr {
         margin-bottom: 0;
     }
