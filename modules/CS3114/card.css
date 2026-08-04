@@ -1,0 +1,226 @@
+/* ================================================
+   card.css
+   Flat black & white card components
+   Independent of module-style.css - paste this
+   file in alongside it and just add the markup
+   ================================================ */
+
+/* ---------- shared card tokens ---------- */
+.etc-card,
+.abs-card,
+.pcp-card {
+    --card-radius: 16px;
+    --card-border: 2px solid #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+    font-family: "Google Sans", Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem auto;
+}
+
+.etc-card *,
+.abs-card *,
+.pcp-card * {
+    box-sizing: border-box;
+}
+
+/* ================================================
+   Effort / time / complexity vs program size
+   ================================================ */
+.etc-card {
+    max-width: 480px;
+    padding: 20px 24px;
+}
+
+.etc-title {
+    margin: 0 0 20px;
+    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.etc-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+    height: 140px;
+}
+
+.etc-bar-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 0;
+    height: 100%;
+}
+
+.etc-bar {
+    width: 100%;
+    background-color: #ffffff;
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+}
+
+.etc-label {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.etc-bar--1 { height: 18%; }
+.etc-bar--2 { height: 34%; }
+.etc-bar--3 { height: 55%; }
+.etc-bar--4 { height: 78%; }
+.etc-bar--5 { height: 100%; }
+
+@media screen and (max-width: 600px) {
+    .etc-card { padding: 16px; }
+    .etc-title { font-size: 0.7rem; margin-bottom: 14px; }
+    .etc-chart { gap: 6px; height: 100px; }
+    .etc-label { margin-top: 6px; font-size: 0.65rem; }
+}
+
+/* ================================================
+   Abstraction pyramid
+   ================================================ */
+.abs-card {
+    max-width: 480px;
+    padding: 20px 24px;
+}
+
+.abs-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.abs-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+    background-color: #ffffff;
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+}
+
+.abs-label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.abs-bar--1 { width: 100%; }
+.abs-bar--2 { width: 82%; }
+.abs-bar--3 { width: 62%; }
+.abs-bar--4 { width: 38%; }
+
+@media screen and (max-width: 600px) {
+    .abs-card { padding: 16px; }
+    .abs-chart { gap: 6px; }
+    .abs-bar { height: 34px; }
+    .abs-label { font-size: 0.65rem; padding: 0 6px; text-align: center; }
+    .abs-bar--2 { width: 88%; }
+    .abs-bar--3 { width: 68%; }
+    .abs-bar--4 { width: 44%; }
+}
+
+/* ================================================
+   Problem breakdown (one complex problem -> parts)
+   ================================================ */
+.pcp-card {
+    max-width: 760px;
+    padding: 20px 24px;
+}
+
+.pcp-row {
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+}
+
+.pcp-problem {
+    flex: 0 0 160px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+    padding: 14px;
+}
+
+.pcp-problem-label {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    line-height: 1.25;
+}
+
+.pcp-arrow {
+    flex: 0 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.pcp-parts {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.pcp-part {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+}
+
+.pcp-part-accent {
+    height: 3px;
+    background-color: #000000;
+}
+
+.pcp-part-label {
+    margin: 0;
+    padding: 12px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@media screen and (max-width: 700px) {
+    .pcp-card { padding: 16px; }
+    .pcp-row { flex-direction: column; gap: 10px; }
+    .pcp-problem { flex: none; justify-content: center; padding: 12px; }
+    .pcp-problem-label { text-align: center; font-size: 0.8rem; }
+    .pcp-arrow { flex: none; transform: rotate(90deg); font-size: 1rem; }
+    .pcp-parts { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .pcp-part-label { padding: 10px 8px; font-size: 0.68rem; }
+}
+
+@media screen and (max-width: 420px) {
+    .pcp-parts { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../module-style.css">
+    <link rel="stylesheet" href="card.css"> <!-- CSS FOR CARDS AND OTHER GRAPHICS  -->
+    <script type="module" src="app.js" defer></script>
+    <title>CS3114/Module-2</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="lesson-border">
+            <h1 class="header"> Software Engineering Concept </h1>
+            <h2 class="header top-space"> Basic Issues In Software Engineering </h2>
+            <h3 class="header big-top-space big-btm-space">Complexity Grows Faster Than Size</h3>
+            <div class="content-card">
+                <h2 class="header"> EXPONENTIAL, NOT PROPORTIONAL </h1>
+                <ul class="text-content">
+                    <li>Industry needs large programs</li>
+                    <li>Without Engineering principles, large programs; not buildable</li>
+                </ul>
+            </div>
+            <!-- COMPLEXITY CARD -->
+            <div class="etc-card">
+                <p class="etc-title">Effort / Time / Complexity vs. Program Size</p>
+                <div class="etc-chart">
+                    <div class="etc-bar-wrap">
+                        <div class="etc-bar etc-bar--1"></div>
+                        <span class="etc-label">1k</span>
+                    </div>
+                    <div class="etc-bar-wrap">
+                        <div class="etc-bar etc-bar--2"></div>
+                        <span class="etc-label">5k</span>
+                    </div>
+                    <div class="etc-bar-wrap">
+                        <div class="etc-bar etc-bar--3"></div>
+                        <span class="etc-label">20k</span>
+                    </div>
+                    <div class="etc-bar-wrap">
+                        <div class="etc-bar etc-bar--4"></div>
+                        <span class="etc-label">50k</span>
+                    </div>
+                    <div class="etc-bar-wrap">
+                        <div class="etc-bar etc-bar--5"></div>
+                        <span class="etc-label">100k</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END: COMPLEXITY CARD -->
+            <h1 class="header big-top-space btm-space"> WEAPON 01 - ABSTRACTION </h2>
+            <h3 class="header big-top-space"> WHAT IT IS </h2>
+            <ul class="text-content">
+                <li>Omit the irrelevant</li>
+                <li>Keep only what matters</li>
+            </ul>
+            <h3 class="header top-space"> HOW IT WORKS </h3>
+            <ul class="text-content">
+                <li>Solve the simpler problem</li>
+                <li>Put the details back one layer at a time.</li>
+            </ul>    
+            <!-- ABSTRACTION CARD -->
+            <div class="abs-card top">
+                <div class="abs-chart">
+                    <div class="abs-bar abs-bar--4">
+                        <span class="abs-label">3rd</span>
+                    </div>
+                    <div class="abs-bar abs-bar--3">
+                        <span class="abs-label">2nd abstraction</span>
+                    </div>
+                    <div class="abs-bar abs-bar--2">
+                        <span class="abs-label">1st abstraction</span>
+                    </div>
+                    <div class="abs-bar abs-bar--1">
+                        <span class="abs-label">The full problem</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END: ABSTRACTION CARD -->
+            <h1 class="big-top-space header"> WEAPON 02 - DECOMPOSITION </h1>
+            <h3 class="header top-space"> THE RULE </h3>
+            <ul class="text-content">
+                <li>Each part must be solvable <span class="bold">indepently</span></li>
+                <li>Put the details back one layer at a time.</li>
+            </ul>  
+            <h3 class="header top-space"> THE TRAP </h3>
+            <ul class="text-content">
+                <li>If too interrelated</li>
+                <li>You get split, but none of the simplicity</li>
+                <li>Makes your software more complex</li>
+            </ul>
+            <!-- PCP CARD -->
+            <div class="pcp-card">
+                <div class="pcp-row">
+                    <div class="pcp-problem">
+                    <p class="pcp-problem-label">One complex problem</p>
+                    </div>
+                    <div class="pcp-arrow">&#8594;</div>
+                    <div class="pcp-parts">
+                    <div class="pcp-part">
+                        <div class="pcp-part-accent"></div>
+                        <p class="pcp-part-label">Part A</p>
+                    </div>
+                    <div class="pcp-part">
+                        <div class="pcp-part-accent"></div>
+                        <p class="pcp-part-label">Part B</p>
+                    </div>
+                    <div class="pcp-part">
+                        <div class="pcp-part-accent"></div>
+                        <p class="pcp-part-label">Part C</p>
+                    </div>
+                    <div class="pcp-part">
+                        <div class="pcp-part-accent"></div>
+                        <p class="pcp-part-label">Part D</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PCP CARD END -->
+        </div>
+        <div class="flex-row space-between" style="margin: 8px 2px;">
+            <a href="../../index.html" class="button">
+                GO BACK
+            </a>
+            <!-- TODO: MAKE PDF OF SITE -->
+            <!-- <a href="../pdf/module-2.html" download="CS3114Module1.pdf" class="button"> -->
+            <a href="../pdf/module-2.html"  class="button">
+                Download as PDF
+            </a>
+        </div>
+    </div>
+</body>
+</html>

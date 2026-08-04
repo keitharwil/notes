@@ -28,13 +28,6 @@ li {
     font-weight: lighter;
 }
 
-
-.flexbox-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .navbar {
     background-color: black;
     padding: 8px;
@@ -64,6 +57,18 @@ li {
     margin-top: 8px;
 }
 
+.btm-space {
+  margin-bottom: 4px;
+}
+
+.big-btm-space {
+  margin-bottom: 8px;
+}
+
+.large-btm-space {
+  margin-bottom: 16px;
+}
+
 .indent {
     margin-left: 1rem;
 }
@@ -75,6 +80,14 @@ li {
     padding: 2rem;
     border-radius: 10px;
     width: 120px;
+}
+
+.content-card {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 16px;
 }
 
 .bold {
@@ -93,6 +106,12 @@ li {
     border-radius: 10px;
 }
 
+.flexbox-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -104,6 +123,10 @@ li {
 
 .justify-center {
   justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 
