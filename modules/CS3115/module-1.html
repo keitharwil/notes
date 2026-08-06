@@ -8,12 +8,271 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../module-style.css">
+    <link rel="stylesheet" href="card.css">
     <script type="module" src="app.js" defer></script>
     <title>CS3114/Module-1</title>
 </head>
 <body>
     <div class="main-container">
 
+        <div class="lesson-border">
+            <h1 class="header">FOUNDATIONAL BACKGROUND ON SECURITY AND DEPENDABILITY TECHNIQUES</h1>
+            <ul class="text-content top-space">
+                <li>With developments in IT over the years.</li>
+                <li>Global society depends on IT infrastructures</li>
+                <li>Infrastructural failures, cyber-attacks, cyberwars are future realities that can affect global society</li>
+                <li>Securing and ensuring reliability of IT environment is a <span class="bold">growing challenge</span> and is a <span class="bold">critical need</span></li>
+            </ul>
+            <h1 class="header big-top-space">Information Assurance</h1>
+            <ul class="text-content top-space">
+                <li class="bold">Integrity</li>
+                    <ul class="text-content subbullet">
+                        <li>
+                            Information and security should be reliable
+                        </li>
+                        <li>
+                            Data should also be reliable; truthfulness in everything given to a user
+                        </li>
+                    </ul>
+                <li class="bold">Availability</li>
+                <ul class="text-content subbullet">
+                    <li>
+                        Information should always be available at <span class="bold">all times</span>
+                    </li>
+                </ul>
+                <li class="bold">Authentication</li>
+                <ul class="text-content subbullet">
+                    <li>
+                        There should always be <span class="bold">verification</span> of the user getting information
+                    </li>
+                    <li>
+                        User must be i<span class="bold">dentified and authorized</span> before accesing info in network
+                    </li>
+                </ul>
+                <li class="bold">Confindentiality</li>
+                <ul class="text-content subbullet">
+                    <li>
+                       Confindentiality or <span class="bold">privacy is very important</span>
+                    </li>
+                    <li>
+                        Information should only be shown if <span class="bold">owner permits it</span> 
+                    </li>
+                    <li>
+                        If not there'll be issues on <span class="bold">data privacy</span>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="lesson-border">
+            <h1 class="header big-top-space">Network Capabilities</h1>
+            <ul class="text-content">
+                <li class="bold header">Network Survivability</li>
+                <ul class="text-content subbullet">
+                    <li>The capability of network where traffic can be carried immediately after a failure</li>
+                </ul>
+            </ul>
+            <h2 class="header top-space">Techniques to improve a network's survivability</h2>
+            <ul class="text-content top-space">
+                <li class="bold">Prevention</li>
+                <ul class="text-content subbullet">
+                    <li>Or avoidance techniques</li>
+                    <li>Focus on improving component and system reliability</li>
+                    <li>Reduce incident faults</li>
+                    <li>Contributes to survivability of network</li>
+                    <li>Making number of surviving components larger</li>
+                </ul>
+                <li class="bold">Network design</li>
+                <ul class="text-content subbullet">
+                    <li>Placing enough variety and capacity in network topology</li>
+                    <li>Survivable network design techniques try to mitigate effects of system-level failure</li>
+                    <li>Example is multihoming nodes</li>
+                    <li>By making each node two or more connected a single link failure cannot separate node from the network</li>
+                </ul>
+            </ul>
+            <ul class="bold header">
+                <li>Resilience</li>
+                <ul class="text-content subbullet">
+                    <li>Ability of network to provide desired service even when challenged by attacks, large-scale disaster, other failures.</li>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="lesson-border">
+            <h1 class="header big-top-space">Multihoming</h1>
+            <ul class="text-content">
+                <li><span class="bold">Multihoming</span> is a mechanism used to configure one computer with more than one network interface</li>
+                <li>With multiple IP addresses; provides enhanced and reliable internet connectivity</li>
+                <li>Multihoming computer is known as the <span class="bold">host</span>; directly or indirectly connected to more than one network</li>
+            </ul>
+            <h2 class="header top-space">Benefits of Multihoming</h2>
+            <ul class="text-content">
+                <li>Multiple real time connections, system failure less likely than with single connection</li>
+                <li>Users work together through multiple entrances; in failure one door closes, other door continue working</li>
+                <li>Web management, multihoming helps load balancing, allows network work with lowest interruption</li>
+                <li>System continues doring disaster and recovery</li>
+            </ul>
+            <h2 class="header top-space">Two Main Types of Multihoming</h2>
+            <ol class="text-content top-space">
+                <li class="bold">IPv4 Multihoming</li>
+                <!-- IPv4 Card -->
+                <div class="ipv4-card">
+                    <p class="ipv4-title">IPv4 address in dotted-decimal notation</p>
+                    <div class="ipv4-wrap">
+                        <div class="ipv4-row">
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-decimal ipv4-sep-dot">172</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-decimal ipv4-sep-dot">16</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-decimal ipv4-sep-dot">254</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-decimal">1</span>
+                        </div>
+                        </div>
+
+                        <div class="ipv4-row">
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-arrow">&#8595;</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-arrow">&#8595;</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-arrow">&#8595;</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-arrow">&#8595;</span>
+                        </div>
+                        </div>
+
+                        <div class="ipv4-row">
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-binary ipv4-sep-comma">10101100</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-binary ipv4-sep-comma">00010000</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-binary ipv4-sep-comma">11111110</span>
+                        </div>
+                        <div class="ipv4-octet-col">
+                            <span class="ipv4-binary">00000001</span>
+                        </div>
+                        </div>
+
+                        <div class="ipv4-brackets">
+                        <div class="ipv4-bracket ipv4-bracket--8bit">
+                            <div class="ipv4-bracket-line">
+                            <span class="ipv4-bracket-tick"></span>
+                            </div>
+                            <p class="ipv4-bracket-label">8 bits</p>
+                        </div>
+
+                        <div class="ipv4-bracket ipv4-bracket--32bit">
+                            <div class="ipv4-bracket-line">
+                            <span class="ipv4-bracket-tick"></span>
+                            </div>
+                            <p class="ipv4-bracket-label">32 bits (4 bytes)</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <ul class="text-content">
+                    <li>Internet Protocol Version 4 (IPv4) is the fourth revision of Internet Protocol</li>
+                    <li>Commonly used protocol in data communication over different networks</li>
+                    <li>It is a connectionless protocol</li>
+                    <li>Uses in packet-switched layer networks such as Ethernet</li>
+                    <li>IPv4 is based on the best-effort model</li>
+                    <li>Multihomed public IP address must be configured with two or more <span class="bold">Internet Service Provider (ISP)</span> connections</li>
+                    <li>Any link or route fails, network traffic is automatically rerouted</li>
+                    <li><span class="bold">IPV4's major downside</span> is it's central connection point for two ISPs, when it fails, entire network fails</li>
+                    <li><span class="bold">Border Gateway Protocol (BGP) </span> is used for multihoming purposes</li>
+                </ul>
+                <li class="bold top-space">IPv6 Multihoming</li>
+                <!-- IPv6 Card -->
+                <div class="ipv6-card">
+                <p class="ipv6-title">IPv6 address</p>
+
+                <div class="ipv6-hex-block">
+                    <p class="ipv6-brace-label">128 bits (16 bytes)</p>
+                    <div class="ipv6-brace-line"></div>
+
+                    <div class="ipv6-hex-row-wrap">
+                    <div class="ipv6-hex-row">
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">0123</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">4567</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">89ab</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">cdef</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">0123</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">4567</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex ipv6-sep-colon">89ab</span></div>
+                        <div class="ipv6-quartet-col"><span class="ipv6-hex">cdef</span></div>
+                    </div>
+                    <span class="ipv6-side-label">Hexadecimal<br>notation</span>
+                    </div>
+
+                    <div class="ipv6-annotations">
+                    <div class="ipv6-callout ipv6-callout--msp">
+                        <span class="ipv6-callout-arrow">&#8599;</span>
+                        Most significant position
+                    </div>
+
+                    <div class="ipv6-quartet-brace">
+                        <div class="ipv6-quartet-brace-line"></div>
+                        <p class="ipv6-quartet-label">Quartet</p>
+                    </div>
+
+                    <div class="ipv6-callout ipv6-callout--hexpos">
+                        <span class="ipv6-callout-arrow">&#8598;</span>
+                        Hexadecimal position
+                    </div>
+                    </div>
+                </div>
+
+                <p class="ipv6-big-arrow">&#8595;</p>
+
+                <div class="ipv6-binary-row-wrap">
+                    <div class="ipv6-bit-callout">
+                    <span class="ipv6-callout-arrow">&#8599;</span>
+                    Bit
+                    </div>
+                    <span class="ipv6-binary">0000 0001 0010 0011</span>
+                    <span class="ipv6-side-label">Binary<br>notation</span>
+                </div>
+                </div>
+                <ul class="text-content">
+                    <li><span class="bold">Internet Protocol Version 6</span> is an Internet Protocol (IP) used 
+                        for carrying data in packets from a source to a desination over various networks
+                    </li>
+                    <li>IPv6 is the enhanced version of IPv4</li>
+                    <li>Can support very large numbers of nodes</li>
+                    <li>Also known as Internet Protocol Next Generation (IPng)</li>
+                    <li>Developed in hexadecimal format, contains 8 octets to provide large scalability</li>
+                    <li>IPv6 deals with address broadcasting without containing broadcast addresses in any class</li>
+                </ul>
+                <ul class="text-content top-space">
+                    <li class="bold header">Traffic management</li>
+                    <ul class="text-content subbullet">
+                        <li>Procedures seek to quickly detect a failure or degraded QoS and direct the network load</li>
+                        <li>typical example is the use of preconfigured backup label–switched paths in multiprotocol label switched (MPLS)</li>
+                    </ul>
+                </ul>
+                <ul class="text-content top-space">
+                    <li class="bold header">Disruption Tolerance or Disruption Tolerant Networking</li>
+                    <ul class="text-content">
+                        <li>DTN a networking architecture that is designed to provide communications in the most unstable and stressed environments</li>
+                        <li>For networks that frequent and long lasting disruptions and high bit error rates that could harshly damage normal communications. </li>
+                        <li>DTN works using different kind of methodology than TCP/IP or Transmission Control</li>
+                        <li>DTN is based on a new experimental protocol called the Bundle Protocol (RFC 5050).</li>
+                        <li>BP operates as an overlay protocol that links together multiple subnets (such as Ethernet-based LANs) into a single network</li>
+                    </ul>
+                </ul>
+            </ol>
+        </div>
     </div>
 </body>
 </html>

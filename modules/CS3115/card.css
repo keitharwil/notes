@@ -1,0 +1,424 @@
+.ipv4-card {
+    --ipv4-radius: 16px;
+    --ipv4-border: 2px solid #000000;
+    --ipv4-col: 84px;
+    --ipv4-gap: 6px;
+
+    box-sizing: border-box;
+    max-width: 480px;
+    margin: 1rem auto;
+    padding: 24px 24px 28px;
+    background-color: #ffffff;
+    border: var(--ipv4-border);
+    border-radius: var(--ipv4-radius);
+    font-family: "Google Sans", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.ipv4-card * {
+    box-sizing: border-box;
+}
+
+.ipv4-title {
+    margin: 0 0 20px;
+    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ipv4-wrap {
+    width: calc(4 * var(--ipv4-col) + 3 * var(--ipv4-gap));
+    margin: 0 auto;
+}
+
+.ipv4-row {
+    display: flex;
+    gap: var(--ipv4-gap);
+}
+
+.ipv4-octet-col {
+    width: var(--ipv4-col);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ipv4-decimal {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.ipv4-sep-dot::after {
+    content: ".";
+}
+
+.ipv4-arrow {
+    margin: 4px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+.ipv4-binary {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.ipv4-sep-comma::after {
+    content: ",";
+}
+
+.ipv4-brackets {
+    margin-top: 10px;
+}
+
+.ipv4-bracket {
+    position: relative;
+}
+
+.ipv4-bracket-line {
+    position: relative;
+    height: 0;
+    border-top: var(--ipv4-border);
+}
+
+.ipv4-bracket-line::before,
+.ipv4-bracket-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 6px;
+    background-color: #000000;
+}
+
+.ipv4-bracket-line::before { left: 0; }
+.ipv4-bracket-line::after { right: 0; }
+
+.ipv4-bracket-tick {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 10px;
+    background-color: #000000;
+    transform: translateX(-50%);
+}
+
+.ipv4-bracket-label {
+    margin: 12px 0 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ipv4-bracket--8bit {
+    width: var(--ipv4-col);
+}
+
+.ipv4-bracket--32bit {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .ipv4-card {
+        --ipv4-col: 58px;
+        --ipv4-gap: 4px;
+        padding: 18px 16px 22px;
+    }
+
+    .ipv4-title {
+        font-size: 0.7rem;
+        margin-bottom: 16px;
+    }
+
+    .ipv4-decimal {
+        font-size: 1.05rem;
+    }
+
+    .ipv4-arrow {
+        font-size: 0.8rem;
+    }
+
+    .ipv4-binary {
+        font-size: 0.6rem;
+    }
+
+    .ipv4-bracket-label {
+        font-size: 0.65rem;
+        margin-top: 10px;
+    }
+
+    .ipv4-bracket--32bit {
+        margin-top: 16px;
+    }
+}
+
+.ipv6-card {
+    --ipv6-radius: 16px;
+    --ipv6-border: 2px solid #000000;
+    --ipv6-q: 46px;
+    --ipv6-gap: 2px;
+
+    box-sizing: border-box;
+    max-width: 620px;
+    margin: 1rem auto;
+    padding: 24px 28px 28px;
+    background-color: #ffffff;
+    border: var(--ipv6-border);
+    border-radius: var(--ipv6-radius);
+    font-family: "Google Sans", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.ipv6-card * {
+    box-sizing: border-box;
+}
+
+.ipv6-title {
+    margin: 0 0 22px;
+    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ipv6-hex-block {
+    width: calc(8 * var(--ipv6-q) + 7 * var(--ipv6-gap));
+    margin: 0 auto;
+}
+
+/* --- 128 bit overbrace --- */
+.ipv6-brace-label {
+    margin: 0 0 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ipv6-brace-line {
+    position: relative;
+    height: 8px;
+    border-top: var(--ipv6-border);
+}
+
+.ipv6-brace-line::before,
+.ipv6-brace-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 8px;
+    background-color: #000000;
+}
+
+.ipv6-brace-line::before { left: 0; }
+.ipv6-brace-line::after { right: 0; }
+
+/* --- hex row + annotations --- */
+.ipv6-hex-row-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.ipv6-hex-row {
+    display: flex;
+    gap: var(--ipv6-gap);
+}
+
+.ipv6-quartet-col {
+    position: relative;
+    width: var(--ipv6-q);
+    display: flex;
+    justify-content: center;
+}
+
+.ipv6-hex {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.ipv6-sep-colon::after {
+    content: " :";
+}
+
+.ipv6-side-label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+/* --- callouts under the hex row --- */
+.ipv6-annotations {
+    position: relative;
+    height: 60px;
+    margin-top: 4px;
+}
+
+.ipv6-callout {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.68rem;
+    font-weight: bold;
+    color: #000000;
+    width: 110px;
+    line-height: 1.25;
+}
+
+.ipv6-callout-arrow {
+    font-size: 0.9rem;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.ipv6-callout--msp {
+    left: calc(0 * var(--ipv6-q));
+    text-align: left;
+    align-items: flex-start;
+}
+
+.ipv6-callout--hexpos {
+    left: calc(5.2 * var(--ipv6-q));
+    text-align: left;
+    align-items: flex-start;
+}
+
+.ipv6-quartet-brace {
+    position: absolute;
+    top: 0;
+    left: calc(4 * var(--ipv6-q) + 4 * var(--ipv6-gap));
+    width: var(--ipv6-q);
+}
+
+.ipv6-quartet-brace-line {
+    position: relative;
+    height: 6px;
+    border-bottom: var(--ipv6-border);
+}
+
+.ipv6-quartet-brace-line::before,
+.ipv6-quartet-brace-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 6px;
+    background-color: #000000;
+}
+
+.ipv6-quartet-brace-line::before { left: 0; }
+.ipv6-quartet-brace-line::after { right: 0; }
+
+.ipv6-quartet-label {
+    margin-top: 4px;
+    font-size: 0.68rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* --- big down arrow --- */
+.ipv6-big-arrow {
+    margin: 8px 0 14px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+/* --- binary row --- */
+.ipv6-binary-row-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.ipv6-binary {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.ipv6-bit-callout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.68rem;
+    font-weight: bold;
+    color: #000000;
+    width: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    .ipv6-card {
+        --ipv6-q: 30px;
+        --ipv6-gap: 1px;
+        padding: 18px 14px 20px;
+    }
+
+    .ipv6-title {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+
+    .ipv6-brace-label {
+        font-size: 0.65rem;
+    }
+
+    .ipv6-hex {
+        font-size: 0.55rem;
+    }
+
+    .ipv6-side-label {
+        font-size: 0.6rem;
+    }
+
+    .ipv6-hex-row-wrap {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .ipv6-annotations {
+        display: none;
+    }
+
+    .ipv6-big-arrow {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .ipv6-binary {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .ipv6-binary-row-wrap {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .ipv6-bit-callout {
+        display: none;
+    }
+}
