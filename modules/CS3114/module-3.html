@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../module-style.css">
+    <script type="module" src="app.js" defer></script>
+    <title>CS3114/Module-3</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="lesson-border">
+            <h1 class="header">
+                Module 3 Software Development Life Cycle
+            </h1>
+            
+            <h2 class="header top-space">
+                Lesson 1 Phases of SDLC
+            </h2>
+            
+            <h3 class="text-content bold top-space">User / Stakeholder's requirements</h3>
+            <p class="text-content">Requirements are intended to meet the needs/objectives of user/stakeholder.</p>
+            
+            <h3 class="text-content bold top-space">Feasibility Study</h3>
+            <p class="text-content">A preliminary study which investigates the information needs of users and resource requirements of a proposed project.</p>
+            <ul class="text-content">
+                <li class="bold">Technical Feasibility</li>
+                <ul class="text-content">
+                    <li> Confirms whether the hardware and software are capable of satisfying the needs of a proposed system or an existing system. </li>
+                </ul>
+                <li class="bold">Financial / Economical feasibility</li>
+                <ul class="text-content">
+                    <li> It signifies the profitability of a proposed or implemented product/project. </li>
+                </ul>
+                <li class="bold">Operational feasibility</li>
+                <ul class="text-content">
+                    <li> Willingness and ability of users or operators of a proposed / an existing product / project / system.</li>
+                </ul>
+                <li class="bold">Behavioural feasibility</li>
+                <ul class="text-content">
+                    <li> Friendliness and safetibility of the software product. </li>
+                </ul>
+            </ul>
+            
+            <h3 class="text-content bold top-space">Requirement Analysis and Specification</h3>
+            <p class="text-content">Starts after the successful completion of feasibility study. Requirement Engineering (RE) determines the exact requirements of the user and organizes them into a Software Requirement Specification (SRS) document.</p>
+            
+            <h3 class="text-content bold top-space">Design</h3>
+            <p class="text-content">This phase is fed with the SRS and results in a logical document called DDS (Design Document Specification). Determines data, process, modularization, and relationships.</p>
+
+            <h3 class="text-content bold top-space">Coding</h3>
+            <p class="text-content">Translates the DDS into executable code under a suitable programming environment. Emphasizes programming efficiency and reduced execution time.</p>
+
+            <h3 class="text-content bold top-space">Testing</h3>
+            <p class="text-content">Associated with quality control. Executes specific test cases to compare actual results against expected outputs, resulting in test and error reports.</p>
+
+            <h3 class="text-content bold top-space">Certification</h3>
+            <p class="text-content">Compares the software's performance against standards framed by recognized organizations like SEI, CMM, and ISO.</p>
+
+            <h3 class="text-content bold top-space">Implementation</h3>
+            <p class="text-content">Concerned with site preparation, file conversion, and tasks leading to a fully operational system, including final user testing.</p>
+
+            <h3 class="text-content bold top-space">Maintenance and Review</h3>
+            <p class="text-content">Involves correcting errors and making necessary updates. It is classified as:</p>
+            <ul class="text-content">
+                <li>Corrective</li>
+                <li>Adaptive</li>
+                <li>Perfective</li>
+                <li>Preventive</li>
+            </ul>
+
+            <h2 class="header large-top-space">
+                Lesson 2 Software Process Model
+            </h2>
+            <ul class="text-content top-space">
+                <li class="bold">Linear sequential model</li>
+                <ul class="text-content">
+                    <li>Proceeds in a linear, orderly fashion (e.g., Waterfall and RAD models).</li>
+                </ul>
+                <li class="bold">Iterative model</li>
+                <ul class="text-content">
+                    <li>Proceeds in iterations using prototypes and continuous customer feedback.</li>
+                </ul>
+                <li class="bold">Evolutionary model</li>
+                <ul class="text-content">
+                    <li>A core product is developed first; new features are added as requirements emerge.</li>
+                </ul>
+                <li class="bold">Formal methods model</li>
+                <ul class="text-content">
+                    <li>Transforms mathematical system specifications into a program.</li>
+                </ul>
+                <li class="bold">System assembly from reusable components</li>
+                <ul class="text-content">
+                    <li>Focuses on integrating existing, reusable components rather than developing from scratch.</li>
+                </ul>
+            </ul>
+
+            <h2 class="header large-top-space">
+                Lesson 3 The Waterfall
+            </h2>
+            <p class="text-content top-space">Proposed by Winston Royce in 1970. In practice, it acts as a rigidly sequential model (Linear sequential model).</p>
+            <h3 class="text-content bold top-space">Stages of the Waterfall Model:</h3>
+            <ul class="text-content">
+                <li class="bold">System engineering:</li>
+                <ul class="text-content">
+                    <li>Requirements are determined and allocated across hardware, software, and databases.</li>
+                </ul>
+                <li class="bold">Requirement analysis:</li>
+                <ul class="text-content">
+                    <li>Requirements are graphically analyzed to avoid ambiguity.</li>
+                </ul>
+                <li class="bold">Design phase:</li>
+                <ul class="text-content">
+                    <li><strong>Traditional:</strong> Structured analysis of detailed requirements.</li>
+                    <li><strong>Object-Oriented (OOD):</strong> Identifying objects and their relationships for better maintainability.</li>
+                </ul>
+                <li class="bold">Coding:</li>
+                <ul class="text-content">
+                    <li>Writing programs in a suitable language.</li>
+                </ul>
+                <li class="bold">Testing:</li>
+                <ul class="text-content">
+                    <li>Modules are progressively integrated and tested in planned steps.</li>
+                </ul>
+                <li class="bold">Maintenance:</li>
+                <ul class="text-content">
+                    <li>Correcting errors, adapting to environment changes, and improving features.</li>
+                </ul>
+            </ul>
+
+            <h3 class="text-content bold top-space">Pros & Cons</h3>
+            <ul class="text-content">
+                <li><strong>Advantages:</strong> Provides maximum ordering and a structured template for engineering.</li>
+                <li><strong>Disadvantages:</strong> Difficult to gather all requirements upfront; working versions are seen very late in the process.</li>
+            </ul>
+
+            <h2 class="header large-top-space">
+                Lesson 4 Prototyping Model
+            </h2>
+            <p class="text-content top-space">Based on the iterative model to give clients a feel of the actual system. Highly applicable for complicated systems when requirements are not clearly known.</p>
+            <ul class="text-content">
+                <li class="bold">Evolutionary prototyping:</li>
+                <ul class="text-content">
+                    <li>Develops an initial implementation, exposed to user comments, and refined continuously.</li>
+                </ul>
+                <li class="bold">Throwaway prototyping:</li>
+                <ul class="text-content">
+                    <li>Implements poorly understood requirements to formulate a validated specification, then discarded.</li>
+                </ul>
+            </ul>
+
+            <h3 class="text-content bold top-space">RAD (Rapid Application Development) Model</h3>
+            <p class="text-content">A linear sequential model emphasizing short development cycles and rapidity achieved by using readymade reusable components.</p>
+
+            <h3 class="text-content bold top-space">The Incremental Model</h3>
+            <p class="text-content">Consists of stepwise development where increments of an operational software product are delivered one after another based on customer feedback.</p>
+
+            <h3 class="text-content bold top-space">Spiral Model</h3>
+            <p class="text-content">Introduced by Barry Boehm (1986). It incorporates a "Project risk" factor, acting as an evolutionary model that mixes the iterative nature of prototyping with the systematic aspects of the waterfall model.</p>
+        </div>
+    </div>
+</body>
+</html>
